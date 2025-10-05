@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            padding: 2rem;
+            margin: 0;
+        }
+        h1{
+            text-align : center;
+            color: brown;
+            margin-bottom: 2rem;
+
+        }
+        .gallery-container{
+            max-width: 600px;
+            width: 100%;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            max-width: 400;
+            width: 100%;
+        }
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: thistle;
+            transition: all 0.3s ease;
+        }
+        .gallery img:hover{
+            border: 2px solid black;
+            box-shadow: darkkhaki;
+
+        }
+        @media (max-width :990px) {
+            .gallery{
+                grid-template-columns: repeat(2, 1fr);;
+            }
+        }
+        @media( max-width:600px){
+            .gallery{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1> Dog Gallery</h1>
+    <div class=""gallery-container>
+    <div class="gallery">
+    <img src = "https://images.pexels.com/photos/1629781/pexels-photo-1629781.jpeg " alt="Dog 1">
+    <img src = "https://images.pexels.com/photos/59523/pexels-photo-59523.jpeg" alt="Dog 2">
+    <img src = "https://images.pexels.com/photos/160846/french-bulldog-summer-smile-joy-160846.jpeg" alt="Dog 3">
+    <img src = "https://images.pexels.com/photos/825949/pexels-photo-825949.jpeg" alt="Dog 4">
+    <img src = "https://images.pexels.com/photos/128817/pexels-photo-128817.jpeg" alt="Dog 5">
+    <img src = "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Dog 6">
+    <img src = "https://images.pexels.com/photos/1254140/pexels-photo-1254140.jpeg" alt="Dog 7">
+    <img src = "https://images.pexels.com/photos/406014/pexels-photo-406014.jpeg" alt="Dog 8">
+    <img src = "https://images.pexels.com/photos/731022/pexels-photo-731022.jpeg" alt="Dog 9">
+</div>
+</div>
+</body>
+</html>

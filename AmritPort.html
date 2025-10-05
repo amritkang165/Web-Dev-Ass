@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body{
+            margin: 0;
+            font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            background: linear-gradient(180deg, #ffe6f0, #fff);
+            color: #4d0033;
+        }
+        header{
+            background: linear-gradient(130deg , #ff99cc, #ff66b3);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid #ff3385;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo{
+            font-size:1.8rem;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 1px;
+        
+
+        }
+
+        nav a{
+            margin-left: 1.5rem;
+            color: whitesmoke;
+            font-weight: 550;
+            padding: 0.3rem 0.7rem;
+            border-radius: 8px;
+            transition: all 0.3s;
+        }
+
+        nav a:hover{
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+
+        }
+
+        .main{
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .main h1{
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+
+        }
+
+        .main p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .main a{
+            background: #ff66b3;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 10px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: transform 0.3s , box-shadow 0.3s;
+            display: inline-block;
+        }
+
+        .main a:hover{
+            background: #ff3385;
+            transform: scale(1.05);
+            box-shadow: 0, 6px 12px rgba(255, 51, 133, 0.4);
+
+        }
+
+        section{
+            text-align: center;
+            padding: 3rem 1rem;
+
+        }
+
+        .about img{
+            border-radius: 50%;
+            width: 150px;     
+            margin-bottom: 1rem;
+            border: 4px solid #ff99cc;
+
+           }
+
+        .skills span{
+            display: inline-block;
+            background-color: #ff66b3;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 5px;
+            margin: 0.3rem;
+            font-weight: bold;
+
+        }
+
+        .projects .card{
+            background-color: #ffb3d9;
+            padding: 1rem;
+            margin: 1rem auto;
+            border-radius: 15px;
+            width: 250px;
+            box-shadow: 0 5px 15px rgba(255,0,102,0.3);
+
+            transition: transform 0.3s;
+
+        }
+
+        .projects .card:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(255, 51, 133, 0.4));
+        }
+
+        .projects .card a{
+            color: #fff;
+            font-weight: bold;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .social a{
+            margin: 0 0.5rem;
+            color: #ff3385;
+            font-weight: bold;
+            text-decoration: none;
+
+        }
+
+        .social a:hover{
+            text-decoration: underline;
+        }
+
+        footer{
+            background:linear-gradient(135deg ,#ff99cc, #ff66b3);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+
+        a:focus{
+            outline: 3px dashed#ff3385;
+            outline-offset: 4px;
+        }
+
+        @media(min-width:600px){
+            .projects-container{
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 1rem;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo"> My portfolio</div>
+        <nav>
+            <a href="#about"> About</a>
+            <a href="#projects"> Projects</a>
+            <a href="#contact"> Contact</a>
+
+        </nav>
+    </header>
+
+    <section class="main">
+        <h1> Hii I'm Amrit Kang</h1>
+        <p> Learing Developer , exploring game development</p>
+        <a href="#projects"> View My Work</a>
+
+    </section>
+
+    <section id="about" class="About">
+        <a href="https://ibb.co/bj9jkqCx"><img src="https://i.ibb.co/vCnCSgTb/Full-Size-Render.jpg" alt="Full-Size-Render" border="0"></a>
+        <p> Hii myslef Amrit , I can build websites and games. </p>
+        <div class="skills">
+            <span> HTML</span> <span>CSS</span> <span> Java</span> <span> JavaScript</span>
+
+        
+        </div>
+    </section>
+
+    <section id="projects" class="projects"> 
+        <h2> My Projects</h2>
+        <div class="projects-container">
+            <div class="card">
+                <h3> Survival Mob</h3>
+                <p> A simple game I build using GoDot in which we have to defend ourselves from slime army</p>
+                <a href="https://akshaj658gmailcom.itch.io/survival-mob" > Play on Itch.io</a>
+
+            </div>
+            <div class="card">
+                <h3> Portfolio Website</h3>
+                <p> My personal portfolio using HTML and CSS</p>
+
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2> Contact Me</h2>
+        <div class="social">
+            <a href="https://github.com/amritkang165 "> GitHub</a>
+            <a href="https://www.linkedin.com/in/amrit-kang-674b7a341?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"> LinkdIn</a>
+
+            <a href="https://amritkang165.itch.io"> Itch.io</a>
+
+        </div>
+        <p> Email: amritkang2805@icloud.com</p>
+    </section>
+
+    <footer> Amrit Kang : 1st year student at SST</footer>
+</body>
+</html>

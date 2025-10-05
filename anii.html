@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: hotpink;
+    }
+    .wheel{
+      width: 250px;
+      height: 250px;
+      border: 5px solid rgb(255, 0, 98);
+      border-radius: 50%;
+      position: relative;
+      
+
+    }
+
+    .wheel-container{
+      width: 250px;
+      height: 250px;
+      position: relative;
+      animation: spin  10s linear infinite ;
+    }
+    .cabin{
+      width: 40px;
+      height: 40px;
+      background-color: pink;
+      border-radius: 5px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform-origin: center -110px;
+      margin: -20px 0 0 -20px;
+    }
+
+    .a1 {transform: rotate(0deg) translate(110px) rotate(0deg) ;}
+    .a2 {transform: rotate(60deg) translate(110px) rotate(-60deg);}
+    .a3 {transform: rotate(120deg)translate(110px) rotate(-120deg);}
+    .a4 {transform: rotate(180deg) translate(110px) rotate(-180deg);}
+    .a5 {transform: rotate(240deg)translate(110px) rotate(-240deg);}
+    .a6 {transform: rotate(300deg) translate(110px) rotate(-300deg);}
+
+    @keyframes spin {
+      0% {transform: rotate(0deg);}
+      100% {transform: rotate(360deg);}
+    }
+ </style>
+</head>
+<body>
+  <div class="wheel-container">
+  <div class="wheel">
+    <div class="cabin a1"> </div>
+    <div class="cabin a2"> </div>
+    <div class="cabin a3"> </div>
+    <div class="cabin a4"> </div>
+    <div class="cabin a5"> </div>
+    <div class="cabin a6"> </div>
+  </div>
+  </div>
+</body>
+</html>
